@@ -10,7 +10,9 @@ namespace Le_Musique.Classes
     public abstract class Elemento
     {
         private EDuracao duracao;
+        private int andamento;
         public EDuracao Duracao { get => duracao; }
+        public int Andamento { set => andamento = value; }
 
         public Elemento(EDuracao duracao)
         {
@@ -19,7 +21,7 @@ namespace Le_Musique.Classes
 
         public double DuracaoReal
         {
-            get => (double)4 / (int)Duracao * 1000;
+            get => ((double)4 / (int)Duracao) * andamento;
         }
 
         public abstract void Tocar();
