@@ -20,9 +20,9 @@ nona.Notas.Add(new Nota(ENota.C, 4, EDuracao.SEMINIMA));
 
 nona.Notas.Add(new Nota(ENota.D, 4, EDuracao.SEMINIMA));
 nona.Notas.Add(new Nota(ENota.E, 4, EDuracao.SEMINIMA));
-nona.Notas.Add(new Nota(ENota.E, 4, EDuracao.MINIMA));
-nona.Notas.Add(new Nota(ENota.D, 4, EDuracao.SEMINIMA));
+nona.Notas.Add(new Nota(ENota.E, 4, EDuracao.SEMIBREVE));
 nona.Notas.Add(new Nota(ENota.D, 4, EDuracao.MINIMA));
+nona.Notas.Add(new Nota(ENota.D, 4, EDuracao.SEMIBREVE));
 
 /*
 for (int i = 0; i < 10; i++)
@@ -41,5 +41,5 @@ for (int i = 0; i < 10; i++)
 
     nona.Notas.Add(new Pausa(EDuracao.SEMIBREVE));
 }*/
-nona.Andamento = 250;
+nona.Andamento = 240;
 nona.Tocar();
